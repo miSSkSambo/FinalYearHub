@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinalYearHub Ultimate AI</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="neuralCanvas"></canvas>
+
+<div class="toggle-btn" onclick="toggleMode()">
+  <div class="toggle-circle"></div>
+</div>
+
+<header class="logo-container">
+  <h1 class="logo-text">FinalYearHub</h1>
+  <p id="typingSubtitle"></p>
+</header>
+
+<section class="mission-vision">
+  <div class="mv-container">
+    <div class="mv-card">
+      <h2>🎯 Our Mission</h2>
+      <p>Empower students with intelligent AI-driven project guidance.</p>
+    </div>
+    <div class="mv-card">
+      <h2>🚀 Our Vision</h2>
+      <p>Transform final year projects using AI and innovation.</p>
+    </div>
+  </div>
+</section>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search project...">
+
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="AI">AI</option>
+    <option value="Cybersecurity">Cybersecurity</option>
+    <option value="Web">Web</option>
+    <option value="Mobile">Mobile</option>
+    <option value="Data">Data</option>
+    <option value="IoT">IoT</option>
+    <option value="Blockchain">Blockchain</option>
+  </select>
+
+  <select id="difficultyFilter">
+    <option value="all">All Difficulty</option>
+    <option value="Beginner">Beginner</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advanced">Advanced</option>
+  </select>
+
+  <button class="ai-btn" onclick="startAIQuiz()">🤖 AI Recommend</button>
+</div>
+
+<div class="grid" id="projectContainer"></div>
+
+<div id="aiModal" class="modal">
+  <div class="modal-content">
+    <div id="aiContent"></div>
+  </div>
+</div>
+
+<!-- Link JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
